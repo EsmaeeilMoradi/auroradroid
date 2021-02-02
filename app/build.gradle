@@ -21,16 +21,16 @@ apply plugin: 'com.android.application'
 apply plugin: "androidx.navigation.safeargs"
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         multiDexEnabled true
 
         applicationId "com.aurora.adroid"
         minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 6
-        versionName "1.0.6"
+        targetSdkVersion 30
+        versionCode 7
+        versionName "1.0.7"
 
         resConfigs "ar-rSA", "de-rDE", "et-rEE", "fr-rFR", "hi-rIN", "kn-rIN", "ml-rIN", "pa-rIN", "pl-rPL", "pt-rBR","pt-rPT", "ro-rRO", "ru-rRU", "sc-rIT", "tr-rTR", "es-rES", "in-rID", "it-rIT"
 
