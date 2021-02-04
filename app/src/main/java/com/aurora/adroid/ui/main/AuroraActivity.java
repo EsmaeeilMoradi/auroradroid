@@ -21,9 +21,10 @@ package com.aurora.adroid.ui.main;
 
 import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,7 +33,6 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -51,6 +51,7 @@ import com.aurora.adroid.ui.generic.activity.ContainerActivity;
 import com.aurora.adroid.ui.generic.activity.DownloadsActivity;
 import com.aurora.adroid.ui.generic.activity.SearchActivity;
 import com.aurora.adroid.ui.intro.IntroActivity;
+import com.aurora.adroid.ui.intro.PermissionFragment;
 import com.aurora.adroid.ui.setting.SettingsActivity;
 import com.aurora.adroid.ui.view.MultiTextLayout;
 import com.aurora.adroid.util.DatabaseUtil;
@@ -355,15 +356,20 @@ public class AuroraActivity extends BaseActivity {
     }
 
     private void checkPermissions() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{
-                            Manifest.permission.READ_EXTERNAL_STORAGE,
-                            Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                            Manifest.permission.ACCESS_NETWORK_STATE
-                    },
-                    1337);
+        if (!PermissionFragment.isPermissionGranted(getBaseContext())) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
+                intent.setData(Uri.parse("package:" + this.getOpPackageName()));
+                this.startActivity(intent);
+            } else {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{
+                                Manifest.permission.READ_EXTERNAL_STORAGE,
+                                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                                Manifest.permission.ACCESS_NETWORK_STATE
+                        },
+                        1337);
+            }
         }
     }
 }
