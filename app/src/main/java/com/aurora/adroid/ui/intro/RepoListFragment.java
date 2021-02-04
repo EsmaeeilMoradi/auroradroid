@@ -51,6 +51,8 @@ import com.mikepenz.fastadapter.select.SelectExtension;
 import com.mikepenz.fastadapter.swipe.SimpleSwipeCallback;
 import com.mikepenz.fastadapter.swipe_drag.SimpleSwipeDragCallback;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -192,7 +194,7 @@ public class RepoListFragment extends BaseFragment implements ItemTouchCallback,
 
     @Override
     public void itemTouchDropped(int oldPosition, int newPosition) {
-
+        // blame it on ItemTouchCallback
     }
 
     @Override
@@ -200,6 +202,11 @@ public class RepoListFragment extends BaseFragment implements ItemTouchCallback,
         //Will use when priority for repo is done
         //DragDropUtil.onMove(fastItemAdapter.getItemAdapter(), oldPosition, newPosition);
         return false;
+    }
+
+    @Override
+    public void itemTouchStartDrag(@NotNull RecyclerView.ViewHolder viewHolder) {
+        // blame it on ItemTouchCallback
     }
 
     @Override
