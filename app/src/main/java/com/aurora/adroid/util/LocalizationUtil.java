@@ -46,6 +46,28 @@ public abstract class LocalizationUtil {
         return localization;
     }
 
+    public static String getLocalizedName(Context context, App app) {
+
+        HashMap<String, Localization> localizationHashMap = app.getLocalizationMap();
+
+        if (localizationHashMap != null) {
+            Localization preferredLocalization = getDefaultLocalization(localizationHashMap);
+            if (preferredLocalization != null && preferredLocalization.getName() != null) {
+                return preferredLocalization.getName();
+            }
+
+            Localization enforcedLocalization = getEnforcedLocalization(localizationHashMap);
+            if (enforcedLocalization != null && enforcedLocalization.getName() != null) {
+                return enforcedLocalization.getName();
+            }
+        }
+
+        if (app.getName() != null)
+            return app.getName();
+
+        return "";
+    }
+
     public static String getLocalizedSummary(Context context, App app) {
 
         HashMap<String, Localization> localizationHashMap = app.getLocalizationMap();

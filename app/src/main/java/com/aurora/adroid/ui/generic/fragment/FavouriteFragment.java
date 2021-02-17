@@ -19,6 +19,7 @@
 
 package com.aurora.adroid.ui.generic.fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -49,6 +50,7 @@ import com.aurora.adroid.task.LiveUpdate;
 import com.aurora.adroid.ui.details.DetailsActivity;
 import com.aurora.adroid.ui.view.ViewFlipper2;
 import com.aurora.adroid.util.ImageUtil;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.aurora.adroid.util.Log;
 import com.aurora.adroid.util.PackageUtil;
 import com.aurora.adroid.util.PathUtil;
@@ -175,11 +177,12 @@ public class FavouriteFragment extends BaseFragment implements SimpleSwipeCallba
     }
 
     private void initDownload() {
+        Context context = requireContext();
         for (App app : selectedAppSet) {
             try {
-                new LiveUpdate(requireContext(), app).enqueueUpdate();
+                new LiveUpdate(context, app).enqueueUpdate();
             } catch (Exception e) {
-                Log.e("Failed to download : %s", app.getName());
+                Log.e("Failed to download : %s", LocalizationUtil.getLocalizedName(context, app));
             }
         }
     }

@@ -36,6 +36,7 @@ import com.aurora.adroid.R;
 import com.aurora.adroid.model.App;
 import com.aurora.adroid.util.ContextUtil;
 import com.aurora.adroid.util.DatabaseUtil;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.aurora.adroid.util.Util;
 import com.aurora.adroid.util.ViewUtil;
 import com.bumptech.glide.load.DataSource;
@@ -82,7 +83,7 @@ public class GenericClusterItem extends BaseClusterItem {
             final Context context = itemView.getContext();
             final App app = item.getApp();
 
-            line1.setText(app.getName());
+            line1.setText(LocalizationUtil.getLocalizedName(context, app));
             line2.setText(StringUtils.joinWith(" \u2022 ",
                     app.getRepoName(),
                     Util.getDateFromMilli(app.getLastUpdated())));

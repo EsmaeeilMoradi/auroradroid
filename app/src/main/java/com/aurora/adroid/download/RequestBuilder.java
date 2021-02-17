@@ -27,6 +27,7 @@ import com.aurora.adroid.model.Package;
 import com.aurora.adroid.model.StaticRepo;
 import com.aurora.adroid.model.RepoRequest;
 import com.aurora.adroid.util.DatabaseUtil;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.aurora.adroid.util.PathUtil;
 import com.aurora.adroid.util.Util;
 import com.tonyodev.fetch2.EnqueueAction;
@@ -46,7 +47,7 @@ public class RequestBuilder {
     public static Request buildRequest(Context context, App app) {
         final Request request = new Request(DatabaseUtil.getDownloadURl(app),
                 PathUtil.getApkPath(context, app.getPackageName(), app.getPkg().getVersionCode()));
-        addAppExtras(request, app, null);
+        addAppExtras(context, request, app, null);
         request.setEnqueueAction(EnqueueAction.REPLACE_EXISTING);
         request.setGroupId(app.getPackageName().hashCode());
         request.setTag(app.getPackageName());
@@ -56,7 +57,7 @@ public class RequestBuilder {
     public static Request buildRequest(Context context, App app, Package pkg) {
         final Request request = new Request(DatabaseUtil.getDownloadURl(app, pkg),
                 PathUtil.getApkPath(context, pkg.getPackageName(), pkg.getVersionCode()));
-        addAppExtras(request, app, pkg);
+        addAppExtras(context, request, app, pkg);
         request.setEnqueueAction(EnqueueAction.REPLACE_EXISTING);
         request.setGroupId(app.getPackageName().hashCode());
         request.setTag(app.getPackageName());
@@ -86,10 +87,10 @@ public class RequestBuilder {
         return requestList;
     }
 
-    private static void addAppExtras(Request request, App app, Package pkg) {
+    private static void addAppExtras(Context context, Request request, App app, Package pkg) {
         final Map<String, String> stringMap = new HashMap<>();
         stringMap.put(Constants.DOWNLOAD_PACKAGE_NAME, app.getPackageName());
-        stringMap.put(Constants.DOWNLOAD_DISPLAY_NAME, app.getName());
+        stringMap.put(Constants.DOWNLOAD_DISPLAY_NAME, LocalizationUtil.getLocalizedName(context, app));
         stringMap.put(Constants.DOWNLOAD_VERSION_NAME, app.getPkg().getVersionName());
         stringMap.put(Constants.DOWNLOAD_VERSION_CODE, String.valueOf(pkg == null
                 ? app.getPkg().getVersionCode()

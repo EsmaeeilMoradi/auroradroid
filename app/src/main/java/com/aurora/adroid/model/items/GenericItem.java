@@ -104,7 +104,7 @@ public class GenericItem extends AbstractItem<GenericItem.ViewHolder> {
             final Context context = itemView.getContext();
             final App app = item.getApp();
 
-            line1.setText(app.getName());
+            line1.setText(LocalizationUtil.getLocalizedName(context, app));
             line2.setText(StringUtils.joinWith(".", Util.getDateFromMilli(app.getLastUpdated()),
                     app.getSuggestedVersionCode(),
                     app.getRepoName(),

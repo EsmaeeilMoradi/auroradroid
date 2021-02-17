@@ -122,7 +122,7 @@ public class UpdatesItem extends AbstractItem<UpdatesItem.ViewHolder> {
         public void bindView(@NotNull UpdatesItem item, @NotNull List<?> list) {
             final App app = item.getApp();
 
-            line1.setText(app.getName());
+            line1.setText(LocalizationUtil.getLocalizedName(context, app));
             line2.setText(StringUtils.joinWith(".", app.getPkg().getVersionName(), app.getPkg().getVersionCode()));
             line3.setText(StringUtils.joinWith("•", Util.humanReadableByteValue(app.getPkg().getSize(), true)));
             txtChanges.setText(LocalizationUtil.getLocalizedChangelog(context, app));

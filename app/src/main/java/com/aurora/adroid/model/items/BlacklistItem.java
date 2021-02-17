@@ -29,6 +29,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.aurora.adroid.R;
 import com.aurora.adroid.model.App;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.google.android.material.checkbox.MaterialCheckBox;
 import com.mikepenz.fastadapter.FastAdapter;
 import com.mikepenz.fastadapter.items.AbstractItem;
@@ -91,7 +92,7 @@ public class BlacklistItem extends AbstractItem<BlacklistItem.ViewHolder> {
         public void bindView(@NotNull BlacklistItem item, @NotNull List<?> list) {
             final App app = item.getApp();
 
-            line1.setText(app.getName());
+            line1.setText(LocalizationUtil.getLocalizedName(context, app));
             line2.setText(app.getPackageName());
             checkBox.setChecked(item.isSelected());
 

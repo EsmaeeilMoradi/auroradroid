@@ -254,7 +254,7 @@ public class SearchActivity extends BaseActivity implements ItemFilterListener<G
             String query = charSequence.toString();
             query = TextUtil.cleanUpString(query);
 
-            String appName = app.getName();
+            String appName = LocalizationUtil.getLocalizedName(this, app);
             appName = TextUtil.cleanUpString(appName);
 
             if (appName.contains(query)) {

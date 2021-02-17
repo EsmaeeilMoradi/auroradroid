@@ -28,6 +28,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.aurora.adroid.R;
 import com.aurora.adroid.model.App;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.mikepenz.fastadapter.adapters.FastItemAdapter;
 import com.mikepenz.fastadapter.items.AbstractItem;
 
@@ -93,7 +94,7 @@ public class InstalledItem extends AbstractItem<InstalledItem.ViewHolder> {
 
             final App app = item.getApp();
 
-            line1.setText(app.getName());
+            line1.setText(LocalizationUtil.getLocalizedName(context, app));
             line2.setText(StringUtils.joinWith(".", app.getSuggestedVersionName(), app.getSuggestedVersionCode()));
             line3.setText(app.isSystemApp() ? "System App" : "User App");
 
