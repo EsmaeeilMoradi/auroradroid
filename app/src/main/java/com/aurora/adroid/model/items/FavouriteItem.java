@@ -36,6 +36,7 @@ import com.aurora.adroid.R;
 import com.aurora.adroid.model.App;
 import com.aurora.adroid.util.ContextUtil;
 import com.aurora.adroid.util.DatabaseUtil;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.aurora.adroid.util.PackageUtil;
 import com.aurora.adroid.util.ViewUtil;
 import com.bumptech.glide.load.DataSource;
@@ -105,7 +106,7 @@ public class FavouriteItem extends AbstractItem<FavouriteItem.ViewHolder> {
             final App app = item.getApp();
             final Context context = itemView.getContext();
 
-            line1.setText(app.getName());
+            line1.setText(LocalizationUtil.getLocalizedName(context, app));
             line2.setText(context.getText(PackageUtil.isInstalled(context, app.getPackageName())
                     ? R.string.list_installed
                     : R.string.list_not_installed));

@@ -34,6 +34,7 @@ import com.aurora.adroid.event.Event;
 import com.aurora.adroid.event.EventType;
 import com.aurora.adroid.model.App;
 import com.aurora.adroid.model.Package;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.aurora.adroid.util.Log;
 import com.aurora.adroid.util.PackageUtil;
 import com.aurora.adroid.util.Util;
@@ -165,7 +166,7 @@ public class PackageItem extends AbstractItem<PackageItem.ViewHolder> {
             });
 
             fetch.enqueue(requestList, result -> {
-                Log.i("Downloading : %s", app.getName());
+                Log.i("Downloading : %s", LocalizationUtil.getLocalizedName(context, app));
             });
         }
 

@@ -101,7 +101,7 @@ public class AppInfoDetails extends AbstractDetails {
                     })
                     .submit();
 
-        txtName.setText(app.getName());
+        txtName.setText(LocalizationUtil.getLocalizedName(context, app));
         setText(txtPackageName, app.getPackageName());
         setText(txtDevName, app.getAuthorName());
 

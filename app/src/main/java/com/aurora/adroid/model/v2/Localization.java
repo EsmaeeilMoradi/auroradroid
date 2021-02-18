@@ -59,4 +59,7 @@ public class Localization {
     @SerializedName("description")
     @Expose
     private String description;
+    @SerializedName("name")
+    @Expose
+    private String name;
 }

@@ -44,6 +44,7 @@ import com.aurora.adroid.model.Package;
 import com.aurora.adroid.ui.generic.activity.BaseActivity;
 import com.aurora.adroid.ui.generic.activity.DownloadsActivity;
 import com.aurora.adroid.util.ContextUtil;
+import com.aurora.adroid.util.LocalizationUtil;
 import com.aurora.adroid.util.Log;
 import com.aurora.adroid.util.PackageUtil;
 import com.aurora.adroid.util.Util;
@@ -311,7 +312,7 @@ public class DetailsActivity extends BaseActivity {
     private void getShareIntent() {
         final Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_SUBJECT, app.getName());
+        intent.putExtra(Intent.EXTRA_SUBJECT, LocalizationUtil.getLocalizedName(this, app));
         intent.putExtra(Intent.EXTRA_TEXT, StringUtils.joinWith("/",
                 app.getRepoUrl(),
                 app.getPackageName()));
