@@ -205,5 +205,21 @@
     "repoMirrors": [],
     "repoFingerprint": "57 32 58 c8 4e 14 9b 5f 4d 92 99 e7 43 4b 2b 69 a8 41 03 72 92 1d 4a e5 86 ba 91 ec 76 78 92 cc",
     "repoDescription": "Collabora Office is a powerful text editor, spreadsheet, and presentation program based on the LibreOffice technology. LibreOffice is the world's most popular open source office suite."
+  },
+  {
+    "repoId": "34",
+    "repoName": "FluffyChat Stable",
+    "repoUrl": "https://fdroid.fluffychat.im",
+    "repoMirrors": [],
+    "repoFingerprint": "8e 26 37 ae f6 69 7c c6 dd 48 6a f0 44 a6 ee 45 b1 a7 42 ae 3e f5 65 66 e7 48 cd e8 bc 65 c1 fb",
+    "repoDescription": "FluffyChat is a messenger for the Matrix chat network. Official repository for normal stable builds."
+  },
+  {
+    "repoId": "35",
+    "repoName": "FluffyChat Nightly",
+    "repoUrl": "https://nightly.fdroid.fluffychat.im",
+    "repoMirrors": [],
+    "repoFingerprint": "21 a4 69 65 73 00 57 64 78 b6 23 df 99 d8 eb 88 9a 80 bc d9 39 ac a6 0a 40 74 74 1b ea ec 39 7d",
+    "repoDescription": "FluffyChat is a messenger for the Matrix chat network. Official repository for nightly builds."
   }
 ]
