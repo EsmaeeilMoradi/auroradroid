@@ -94,11 +94,11 @@ public class InstallationFragment extends PreferenceFragmentCompat implements Sh
                         }
                     case "3":
                         if (Util.isMiui(requireContext()) && Util.isMiuiOptimizationDisabled()) {
-                            PrefUtil.putString(requireContext(), Constants.PREFERENCE_INSTALLATION_METHOD, installMethod);
-                            return true;
-                        } else {
                             showWarningDialog(R.string.pref_install_mode_miui);
                             return false;
+                        } else {
+                            PrefUtil.putString(requireContext(), Constants.PREFERENCE_INSTALLATION_METHOD, installMethod);
+                            return true;
                         }
                     default:
                         PrefUtil.putString(requireContext(), Constants.PREFERENCE_INSTALLATION_METHOD, installMethod);
