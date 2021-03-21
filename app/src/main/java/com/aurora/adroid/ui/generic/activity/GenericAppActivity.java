@@ -22,7 +22,6 @@ package com.aurora.adroid.ui.generic.activity;
 import android.app.Service;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.ResultReceiver;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -184,11 +183,11 @@ public class GenericAppActivity extends BaseActivity implements ItemFilterListen
         switch (sort) {
             case NAME_AZ:
                 Collections.sort(itemAdapter.getAdapterItems(), (App1, App2) ->
-                        App1.getApp().getName().compareToIgnoreCase(App2.getApp().getName()));
+                        LocalizationUtil.getLocalizedName(this, App1.getApp()).compareToIgnoreCase(LocalizationUtil.getLocalizedName(this, App2.getApp())));
                 break;
             case NAME_ZA:
                 Collections.sort(itemAdapter.getAdapterItems(), (App1, App2) ->
-                        App2.getApp().getName().compareToIgnoreCase(App1.getApp().getName()));
+                        LocalizationUtil.getLocalizedName(this, App2.getApp()).compareToIgnoreCase(LocalizationUtil.getLocalizedName(this, App1.getApp())));
                 break;
             case SIZE_MIN:
                 Collections.sort(itemAdapter.getAdapterItems(), (App1, App2) ->
