@@ -28,10 +28,10 @@
         <item>20sp</item>
     </array>
     <string-array name="pref_themes">
-        <item>Light</item>
-        <item>Dark</item>
-        <item>Follow System</item>
-        <item>Night Mode (Battery Saver)</item>
+        <item>@string/pref_ui_theme_light</item>
+        <item>@string/pref_ui_theme_dark</item>
+        <item>@string/pref_ui_theme_system</item>
+        <item>@string/pref_ui_theme_black</item>
     </string-array>
 
     <string-array name="pref_themes_values">
@@ -126,6 +126,7 @@
     <string-array name="pref_locale_names">
         <item>@string/pref_default</item>
         <item>Arabic - Saudi Arabia</item>
+        <item>Chinese - Taiwan</item>
         <item>English</item>
         <item>Estonian</item>
         <item>French</item>
@@ -149,6 +150,7 @@
     <string-array name="pref_locale_values">
         <item> </item>
         <item>ar-SA</item>
+        <item>zh-TW</item>
         <item>en-US</item>
         <item>et-EE</item>
         <item>fr-FR</item>

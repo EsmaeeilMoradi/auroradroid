@@ -106,7 +106,7 @@
                 android:layout_marginStart="@dimen/margin_normal"
                 android:layout_marginEnd="@dimen/margin_normal"
                 android:layout_marginBottom="@dimen/margin_normal"
-                android:hint="Fingerprint (Optional)">
+                android:hint="@string/repo_optional_fingerprint">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/repo_fingerprint"
