@@ -92,9 +92,14 @@
     <string name="action_use_mirror">Use mirror URL</string>
     <string name="action_whitelist">Whitelist</string>
 
+    <string name="app_details_permission">Permission</string>
+    <string name="app_details_source">Source</string>
+    <string name="app_details_website">Website</string>
+    <string name="app_details_donation">Donation</string>
+    <string name="app_details_settings">Settings</string>
+
     <string name="cancel_button_label">Cancel</string>
     <string name="choose_button_label">Select</string>
-
 
     <string name="details_anti_features">Anti features</string>
     <string name="details_apk_suggested">Suggested</string>
@@ -118,8 +123,8 @@
     <string name="dialog_sync_complete_positive">Restart now</string>
     <string name="dialog_sync_completed_desc">All repositories updated, it is recommended to restart the app after updates.</string>
     <string name="dialog_sync_completed_desc_alt">No new updates available</string>
-    <string name="dialog_sync_desc">Do you wish to update apps from repositories ?</string>
-    <string name="dialog_sync_desc_alt">Old data detected,there may be new updates, do you wish to sync all repositories ?</string>
+    <string name="dialog_sync_desc">Do you wish to update apps from repositories?</string>
+    <string name="dialog_sync_desc_alt">Old data detected,there may be new updates, do you wish to sync all repositories?</string>
     <string name="dialog_sync_negative">No</string>
     <string name="dialog_sync_positive">Yes</string>
     <string name="dialog_sync_title">Repo Updates</string>
@@ -204,11 +209,12 @@
     <string name="pref_downloads_debug_summary">Enable download debugging to get detailed logs</string>
     <string name="pref_downloads_debug_title">Download debugging</string>
     <string name="pref_downloads_path_title">Download path</string>
+    <string name="pref_downloads_path_desc">Select default download directory</string>
     <string name="pref_downloads_strategy_parallel">Parallel download (Splits)</string>
     <string name="pref_downloads_strategy_sequential">Sequential download</string>
     <string name="pref_downloads_strategy_summary">Select default download strategy, recommended Parallel Strategy for fastest download</string>
     <string name="pref_downloads_strategy_title">Download strategy</string>
-    <string name="pref_downloads_wifi_title">Download using wifi only</string>
+    <string name="pref_downloads_wifi_title">Download using WiFi only</string>
     <string name="pref_install_auto_summary">Apps are installed instantly after download completes</string>
     <string name="pref_install_auto_title">Auto install APKs post-download</string>
     <string name="pref_install_delete_summary">On devices running Android Pie + with root install method, APKs get deleted by default</string>
@@ -224,7 +230,7 @@
     <string name="pref_install_mode_services">Aurora Services</string>
     <string name="pref_install_mode_summary">Select mode of APK installation</string>
     <string name="pref_install_mode_title">Installation method</string>
-    <string name="pref_install_profile_summary">"Select the target profile to install apps to. Only works with the root installation method"</string>
+    <string name="pref_install_profile_summary">"Select the target profile to install apps to; this option only works with the root installation method"</string>
     <string name="pref_install_profile_title">"Installation profiles"</string>
     <string name="pref_install_type_summary">Use native installer to install packages, breaks bundled apk installations</string>
     <string name="pref_install_type_title">Enforce native installer</string>
@@ -239,12 +245,13 @@
     <string name="pref_proxy_port">Proxy port</string>
     <string name="pref_proxy_type">Proxy type</string>
     <string name="pref_services_desc">Launch Aurora services</string>
-    <string name="pref_services_desc_alt">Aurora Services unavailable. Click to go to the services repository to learn more.</string>
+    <string name="pref_services_desc_alt">Aurora Services unavailable. Click to go to the services repository to learn more</string>
     <string name="pref_services_title">Aurora Services</string>
     <string name="pref_ui">User Interface</string>
     <string name="pref_ui_theme_black">Black</string>
     <string name="pref_ui_theme_dark">Dark</string>
     <string name="pref_ui_theme_light">Light</string>
+    <string name="pref_ui_theme_system">System default</string>
     <string name="pref_ui_theme_title">Theme</string>
     <string name="pref_ui_transparent">Transparent style</string>
     <string name="pref_ui_transparent_summary">Use transparent card style for category and link views</string>
@@ -263,6 +270,7 @@
     <string name="pref_updates_title">Updates</string>
 
     <string name="repo_addr">Repository Address</string>
+    <string name="repo_optional_fingerprint">Fingerprint (Optional)</string>
     <string name="repo_fingerprint">Repository Fingerprint</string>
     <string name="repo_id">Repository ID</string>
     <string name="repo_list">Repository list</string>

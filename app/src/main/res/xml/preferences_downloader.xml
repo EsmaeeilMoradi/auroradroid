@@ -29,7 +29,7 @@
         app:rootDir="/mnt"
         app:selectionMode="single"
         app:selectionType="directory"
-        app:summary="Select default download directory"
+        app:summary="@string/pref_downloads_path_desc"
         app:title="@string/pref_downloads_path_title"
         app:txtTitle="Select Directory" />
 

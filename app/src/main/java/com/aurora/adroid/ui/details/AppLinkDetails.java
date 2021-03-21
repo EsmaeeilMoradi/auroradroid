@@ -56,7 +56,7 @@ public class AppLinkDetails extends AbstractDetails {
     @Override
     public void draw() {
         LinkView permLinkView = new LinkView(context);
-        permLinkView.setLinkText("Permission");
+        permLinkView.setLinkText(permLinkView.getResources().getString(R.string.app_details_permission));
         permLinkView.setLinkImageId(R.drawable.ic_permission_link);
         permLinkView.setColor(R.color.colorGold);
         permLinkView.setOnClickListener(v -> {
@@ -70,7 +70,7 @@ public class AppLinkDetails extends AbstractDetails {
 
         LinkView sourceLinkView = new LinkView(context);
         sourceLinkView.setVisibility(TextUtils.isEmpty(app.getSourceCode()) ? View.GONE : View.VISIBLE);
-        sourceLinkView.setLinkText("Source");
+        sourceLinkView.setLinkText(sourceLinkView.getResources().getString(R.string.app_details_source));
         sourceLinkView.setLinkImageId(R.drawable.ic_source_link);
         sourceLinkView.setColor(R.color.colorCyan);
         sourceLinkView.setOnClickListener(v -> {
@@ -80,7 +80,7 @@ public class AppLinkDetails extends AbstractDetails {
 
         LinkView websiteLinkView = new LinkView(context);
         websiteLinkView.setVisibility(TextUtils.isEmpty(app.getWebSite()) ? View.GONE : View.VISIBLE);
-        websiteLinkView.setLinkText("Website");
+        websiteLinkView.setLinkText(websiteLinkView.getResources().getString(R.string.app_details_website));
         websiteLinkView.setLinkImageId(R.drawable.ic_web_link);
         websiteLinkView.setColor(R.color.colorPurple);
         websiteLinkView.setOnClickListener(v -> {
@@ -90,7 +90,7 @@ public class AppLinkDetails extends AbstractDetails {
 
         LinkView donationLinkView = new LinkView(context);
         donationLinkView.setVisibility(TextUtils.isEmpty(app.getDonate()) ? View.GONE : View.VISIBLE);
-        donationLinkView.setLinkText("Donation");
+        donationLinkView.setLinkText(donationLinkView.getResources().getString(R.string.app_details_donation));
         donationLinkView.setLinkImageId(R.drawable.ic_donation_link);
         donationLinkView.setColor(R.color.colorOrange);
         donationLinkView.setOnClickListener(v -> {
@@ -100,7 +100,7 @@ public class AppLinkDetails extends AbstractDetails {
 
         LinkView settingsLinkView = new LinkView(context);
         settingsLinkView.setVisibility(PackageUtil.isInstalled(context, app.getPackageName()) ? View.VISIBLE : View.GONE);
-        settingsLinkView.setLinkText("Settings");
+        settingsLinkView.setLinkText(settingsLinkView.getResources().getString(R.string.app_details_settings));
         settingsLinkView.setLinkImageId(R.drawable.ic_settings_link);
         settingsLinkView.setColor(R.color.colorGreen);
         settingsLinkView.setOnClickListener(v -> {
