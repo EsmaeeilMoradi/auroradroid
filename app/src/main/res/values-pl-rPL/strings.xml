@@ -50,14 +50,10 @@
     <string name="details_no_description">"Programista nie zamieścił opisu"</string>
     <string name="details_no_permissions">"Nie wymaga żadnych uprawnień"</string>
     <string name="details_permissions">"Uprawnienia aplikacji"</string>
-
-    <!-- Fuzzy -->
     <string name="details_permissions_desc">"Sklep Aurora wymaga następujących uprawnień"</string>
-
-    <!-- Fuzzy -->
-    <string name="details_repo_desc">"Wybierz repozytorium F-Droid aby zsynchronizować"</string>
+    <string name="details_repo_desc">"Wybierz repozytoria, aby zsynchronizować"</string>
     <string name="dialog_sync_title">"Aktualizacje repozytorium"</string>
-    <string name="dialog_sync_desc">"Czy chcesz zaktualizować aplikacje z repozytorium?"</string>
+    <string name="dialog_sync_desc">"Czy chcesz zaktualizować aplikacje z repozytoriów?"</string>
     <string name="dialog_sync_desc_alt">"Wykryto stare dane, mogą być już nowe aktualizacje. Czy chcesz zsynchronizować wszystkie repozytoria?"</string>
     <string name="dialog_sync_completed_desc">"Wszystkie repozytoria zaktualizowane, polecane jest uruchomienie ponowne aplikacji."</string>
     <string name="dialog_sync_positive">"Tak"</string>
@@ -70,8 +66,6 @@
     <string name="download_canceled">"Anulowano"</string>
     <string name="download_clear_completed">"Czyszczenie zakończone"</string>
     <string name="download_completed">"Pobrano"</string>
-
-    <!-- Fuzzy -->
     <string name="download_failed">"Pobieranie zakończone niepowodzeniem"</string>
     <string name="download_force_clear_all">"Wymuś czyszczenie wszystkiego"</string>
     <string name="download_none">"Brak pobierań"</string>
@@ -90,13 +84,9 @@
     <string name="installer_status_failure">"Instalacja zakończona niepowodzeniem"</string>
     <string name="installer_status_failure_aborted">"Instalacja anulowana"</string>
     <string name="installer_status_failure_blocked">"Instalacja została zablokowana"</string>
-
-    <!-- Fuzzy -->
     <string name="installer_status_failure_conflict">"Istnieje pakiet o konfliktującej sygnaturze"</string>
     <string name="installer_status_failure_incompatible">"Aplikacja niekompatybilna"</string>
     <string name="installer_status_failure_invalid">"Nieprawidłowe lub uszkodzone APK"</string>
-
-    <!-- Fuzzy -->
     <string name="installer_status_failure_storage">"Brak miejsca w pamięci"</string>
     <string name="installer_status_success">"Poprawnie zainstalowano"</string>
     <string name="installer_status_unknown">"Nieznany"</string>
@@ -114,8 +104,6 @@
     <string name="sync_completed_all">"Wszystkie repozytoria zynchronizowane"</string>
     <string name="sync_progress">"Synchronizacja repozytorium"</string>
     <string name="sync_failed">"Synchronizacja zakończona niepowodzeniem"</string>
-
-    <!-- Fuzzy -->
     <string name="title_home">"Aurora Droid"</string>
     <string name="title_apps_new">"Nowe aplikacje"</string>
     <string name="title_categories">"Kategorie"</string>
@@ -130,18 +118,12 @@
     <string name="title_url">"URL"</string>
     <string name="title_fingerprint">"Odcisk"</string>
     <string name="title_desc">"Opis"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_dialog_to_apply_restart">"Ustawienie zostanie zastosowane po ponownym uruchomieniu aplikacji"</string>
     <string name="pref_installations">"Instalacje"</string>
     <string name="pref_install_auto_summary">"Aplikacje zostaną zainstalowane od razu po zakończeniu pobierania"</string>
     <string name="pref_install_auto_title">"Automatycznie instaluj aplikacje po pobraniu"</string>
     <string name="pref_install_delete_summary">"Na urządzeniach z systemem Pie + z metodą instalacji root aplikacje zostaną domyślnie usunięte"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_install_delete_title">"Usuń plik apk po instalacji"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_install_type_summary">"Użyj natywnego instalatora aplikacji, psuje to niektóre pakiety"</string>
     <string name="pref_install_type_title">"Wymuś natywny instalator"</string>
     <string name="pref_install_mode_summary">"Wybierz tryb instalowania aplikacji"</string>
@@ -150,14 +132,8 @@
     <string name="pref_install_mode_root">"Root"</string>
     <string name="pref_install_mode_services">"Usługi Aurora"</string>
     <string name="pref_install_mode_no_root">"Nie wykryto uprawnień roota, upewnij się że urządzenie jest zrootowane"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_install_mode_root_warn">"Instalacja metodą root wymaga, aby plik apk pobierał się do danych aplikacji, aby zainstalować ją przez adb, Pie +"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_install_mode_no_services">"Usługi Aurora nie są zainstalowane, prosimy o instalację"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_install_mode_offline_services">"Usługi Aurora nie mogły się połączyć. Upewnij się że są włączone, i że posiadasz poprawną wersję aplikacji"</string>
     <string name="pref_ui">"Interfejs użytkownika"</string>
     <string name="pref_ui_theme_title">"Motyw"</string>
@@ -192,8 +168,6 @@
     <string name="pref_updates_3days">"3 dni"</string>
     <string name="pref_updates_7days">"7 dni"</string>
     <string name="pref_services_title">"Usługi Aurora"</string>
-
-    <!-- Fuzzy -->
     <string name="pref_services_desc">"Włącz Usługi Aurora"</string>
     <string name="pref_services_desc_alt">"Usługi Aurora są niedostępne. Kliknij aby przejść do repozytorium usług aby dowiedzieć się więcej."</string>
     <string name="repo_list">"Lista repozytorium"</string>
@@ -211,11 +185,43 @@
     <string name="error_search_not_found">"Nie znaleziono pasujących aplikacji"</string>
     <string name="error_unknown">"Wystąpił nieznany błąd"</string>
     <string name="error_no_updates">"Brak aktualizacji"</string>
-
-    <!-- Fuzzy -->
     <string name="notification_installation_auto">"Pobrano, kliknij aby zainstalować"</string>
     <string name="toast_apk_blacklisted">"Czarna lista"</string>
     <string name="toast_apk_whitelisted">"Biała lista"</string>
     <string name="toast_apk_copy_success">"APK poprawnie skopiowany"</string>
     <string name="toast_apk_copy_failure">"Nie udało się skopiować APK"</string>
+    <string name="action_ignore">"Ignoruj tą wersję"</string>
+    <string name="action_save">"Zapisz"</string>
+    <string name="action_show_user_only">"Pokaż tylko aplikacje użytkownika"</string>
+    <string name="action_sortBy">"Sortuj według"</string>
+    <string name="details_apk_suggested">"Sugerowane"</string>
+    <string name="dialog_sync_completed_desc_alt">"Nie ma dostępnych aktualizacji"</string>
+    <string name="dialog_repo_list">"Lista repozytoriów"</string>
+    <string name="menu_repository">"Repozytoria"</string>
+    <string name="menu_setting">"Ustawienia"</string>
+    <string name="menu_about">"O aplikacji"</string>
+    <string name="download_metadata">"Pobieranie meta danych"</string>
+    <string name="list_update_all_txt_one">"Aktualizacja dostępna"</string>
+    <string name="list_update_selected">"Wybrano aktualizacje"</string>
+    <string name="notification_channel_alert">"Szybkie powiadomienia"</string>
+    <string name="notification_channel_general">"Powiadomienia ogólne"</string>
+    <string name="sync_service">"Serwis aktualizacji repozytoriów uruchomiony"</string>
+    <string name="sync_init">"Sprawdzanie aktualizacji"</string>
+    <string name="sync_downloading">"Pobieranie repozytoriów"</string>
+    <string name="title_installed">"Moje aplikacje i gry"</string>
+    <string name="pref_updates_app_experimental">"Zezwalaj na eksperymentalne aktualizacje"</string>
+    <string name="pref_updates_app_experimental_desc">"Jeśli włączone, wersję beta/Alpha zastąpią wersję stabilne"</string>
+    <string name="details_new_changes">"Co nowego"</string>
+    <string name="pref_downloader_internal">"Pobieraj aplikacje do pamięci wewnętrznej"</string>
+    <string name="pref_downloader_internal_desc">"Jeśli włączone nie będziesz mógł instalować aplikacji przez Aurora Services"</string>
+    <string name="action_reset">"Reset"</string>
+    <string name="action_select_all">"Wybierz wszystko"</string>
+    <string name="list_not_installed">"Nie zainstalowano"</string>
+    <string name="list_repo_availability">"Sprawdzanie dostępności"</string>
+    <string name="list_repo_available">"Dostępne"</string>
+    <string name="list_repo_unavailable">"Niedostępne"</string>
+    <string name="title_repo_add_desc">"Dodaj własne repozytorium do synchronizacji"</string>
+    <string name="toast_repo_sync_completed">"Wszystkie repozytoria zaktualizowane"</string>
+    <string name="toast_repo_sync_no_updates">"Nie ma dostępnych aktualizacji"</string>
+    <string name="string_uninstall_success">"Poprawnie zainstalowano"</string>
 </resources>
