@@ -253,4 +253,34 @@
 
     <!-- Fuzzy -->
     <string name="pref_locale_list_title">"Yereli seç"</string>
+    <string name="action_grant">"Hibe"</string>
+    <string name="action_syncing">"Eşitleniyor"</string>
+    <string name="cancel_button_label">"İptal"</string>
+    <string name="choose_button_label">"Seç"</string>
+    <string name="details_anti_features">"Karşıt özellikler"</string>
+    <string name="details_no_anti_features">"Karşıt özellik yok"</string>
+    <string name="details_no_changes">"Geliştirici tarafından değişiklik günlüğü sağlanmadı"</string>
+    <string name="details_no_handler">"%s ile başa çıkabilecek kullanılabilir bir uygulamanız yok."</string>
+    <string name="error_dir_access">"Dizine erişilemiyor"</string>
+    <string name="label_parent_directory">"Üst Dizin"</string>
+    <string name="last_edit">"Son düzenleme"</string>
+    <string name="pref_install_profile_summary">"Uygulamaların yükleneceği hedef profili seçin. Yalnızca kök yükleme yöntemiyle çalışır"</string>
+    <string name="pref_install_profile_title">"Kurulum profilleri"</string>
+    <string name="pref_updates_app_suggested">"Yalnızca önerilen güncellemeler"</string>
+    <string name="pref_updates_app_suggested_desc">"Etkinleştirilirse, yalnızca önerilen güncellemeler mevcut olacaktır"</string>
+    <string name="repo_unable_to_reach">"Ulaşılamıyor"</string>
+    <string name="string_install_failed">"Kurulum başarısız oldu"</string>
+    <string name="string_install_success">"Başarıyla kuruldu"</string>
+    <string name="string_no_root">"Kök erişim mevcut değil"</string>
+    <string name="string_uninstall_failed">"Kaldırma başarısız oldu"</string>
+
+    <!-- English sentence is incorrect, should be "Succesfuly Uninstalled" -->
+    <string name="string_uninstall_success">"Başarıyla Kaldırıldı"</string>
+    <string name="action_remove_all">"Tümünü kaldır"</string>
+    <string name="action_save_return">"Kaydet ve Geri Dön"</string>
+    <string name="pref_install_mode_session">"Oturum"</string>
+    <string name="pref_install_mode_miui">"MIUI kullanıyor görünüyorsunuz, oturum yükleyici MIUI çalıştıran cihazlarda çalışmıyor. Lütfen MIUI Optimizasyonlarını devre dışı bırakın veya diğer kurulum yöntemlerini kullanın."</string>
+    <string name="string_export_failed">"Liste dışa aktarılamadı"</string>
+    <string name="string_export_to">"Liste dışa aktarıldı"</string>
+    <string name="string_import_failed">"Liste içe aktarılamadı"</string>
 </resources>
