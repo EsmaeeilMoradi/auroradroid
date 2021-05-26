@@ -2,7 +2,7 @@
 <resources>
     <string name="action_add">"Lisa"</string>
     <string name="action_ask">"Küsi"</string>
-    <string name="action_blacklist">"Must nimekiri"</string>
+    <string name="action_blacklist">"Ignoreerimisloend"</string>
     <string name="action_cancel">"Tühista"</string>
     <string name="action_clear">"Tühjenda"</string>
     <string name="action_clear_all">"Tühjenda kõik"</string>
@@ -42,7 +42,7 @@
     <string name="action_updates">"Uuendused"</string>
     <string name="action_use_mirror">"Kasuta peegel-URLi"</string>
     <string name="action_unsupported">"Ühildumatu rakendus"</string>
-    <string name="action_whitelist">"Valge nimekiri"</string>
+    <string name="action_whitelist">"Lubamisloend"</string>
     <string name="details_more">"Loe lisaks"</string>
     <string name="details_more_apps_dev">"Rohkem rakendusi arendajalt"</string>
     <string name="details_more_apps_similar">"Sarnase kategooria rakendused"</string>
@@ -101,8 +101,8 @@
     <string name="installer_status_success">"Edukalt installitud"</string>
     <string name="installer_status_unknown">"Teadmata"</string>
     <string name="installer_status_user_action">"Ootan kasutaja kinnitust"</string>
-    <string name="list_blacklist">"Mustas nimekirjas rakendused"</string>
-    <string name="list_blacklist_none">"Rakendusi pole mustas nimekirjas"</string>
+    <string name="list_blacklist">"Ignoreeritud rakendused"</string>
+    <string name="list_blacklist_none">"Ignoreeritud rakendused puuduvad"</string>
     <string name="list_empty_fav">"Lemmikud puuduvad"</string>
     <string name="list_empty_updates">"Uuendusi pole saadaval"</string>
     <string name="list_installed">"Installitud"</string>
@@ -214,8 +214,8 @@
 
     <!-- Fuzzy -->
     <string name="notification_installation_auto">"Allalaaditud, klõpsa installimiseks"</string>
-    <string name="toast_apk_blacklisted">"Mustas nimekirjas"</string>
-    <string name="toast_apk_whitelisted">"Valges nimekirjas"</string>
+    <string name="toast_apk_blacklisted">"Ignoreeritud"</string>
+    <string name="toast_apk_whitelisted">"Lubamisloendis"</string>
     <string name="toast_apk_copy_success">"APK edukalt kopeeritud"</string>
     <string name="toast_apk_copy_failure">"APKi kopeerimine ebaõnnestus"</string>
     <string name="action_ignore">"Ignoreeri seda versiooni"</string>
@@ -230,7 +230,7 @@
     <string name="menu_about">"Teave"</string>
     <string name="download_metadata">"Metaandmete hankimine"</string>
     <string name="list_update_all_txt_one">"uuendus saadaval"</string>
-    <string name="list_update_selected">"Uuendus valitud"</string>
+    <string name="list_update_selected">"Uuenda valitud"</string>
     <string name="notification_channel_alert">"Kiirteade"</string>
     <string name="notification_channel_general">"Üldine teade"</string>
     <string name="sync_service">"Hoidla sünkimise teenus käimas"</string>
@@ -277,4 +277,32 @@
     <string name="pref_locale_custom_title">"Kohandatud keel"</string>
     <string name="pref_locale_custom_summary">"Sunni kohandatud rakenduse keel"</string>
     <string name="pref_locale_list_title">"Vali lokaal"</string>
+    <string name="action_grant">"Luba"</string>
+    <string name="action_syncing">"Sünkroonimine"</string>
+    <string name="cancel_button_label">"Tühista"</string>
+    <string name="choose_button_label">"Vali"</string>
+    <string name="details_anti_features">"Anti-funktsioonid"</string>
+    <string name="details_no_anti_features">"Anti-funktsioonid puuduvad"</string>
+    <string name="details_no_changes">"Arendaja ei ole muudatuste logi sisestanud"</string>
+    <string name="details_no_handler">"Sul ei ole ühtegi rakendust, mis oskaks %s avada."</string>
+    <string name="error_dir_access">"Kataloogile ei saa ligi pääseda"</string>
+    <string name="label_parent_directory">"Ülemkataloog"</string>
+    <string name="last_edit">"Viimati muudetud: "</string>
+    <string name="pref_install_profile_summary">"Vali sihtprofiil, millele rakendusi installida. Töötab vaid juurkasutaja installimeetodiga"</string>
+    <string name="pref_install_profile_title">"Installimisprofiilid"</string>
+    <string name="pref_updates_app_suggested">"Ainult soovitatud uuendused"</string>
+    <string name="pref_updates_app_suggested_desc">"Lubamisel tehakse ainult soovitatud uuendused saadavaks"</string>
+    <string name="repo_unable_to_reach">"Pole kättesaadav"</string>
+    <string name="string_install_failed">"Installimine ebaõnnestus"</string>
+    <string name="string_install_success">"Installimine õnnestus"</string>
+    <string name="string_no_root">"Juurkasutaja ligipääs pole saadaval"</string>
+    <string name="string_uninstall_failed">"Eemaldamine ebaõnnestus"</string>
+    <string name="string_uninstall_success">"Edukalt installitud"</string>
+    <string name="action_remove_all">"Eemalda kõik"</string>
+    <string name="action_save_return">"Salvesta ja pöördu tagasi"</string>
+    <string name="pref_install_mode_session">"Sessioon"</string>
+    <string name="pref_install_mode_miui">"Tundub, et kasutad MIUI-d, sessioonipõhine installimeetod ei tööta sellega. Palun keela MIUI optimeerimised või kasuta teisi installimeetodeid."</string>
+    <string name="string_export_failed">"Nimekirja eksportimine ebaõnnestus"</string>
+    <string name="string_export_to">"Nimekiri eksporditud"</string>
+    <string name="string_import_failed">"Nimekirja importimine ebaõnnestus"</string>
 </resources>
