@@ -277,4 +277,25 @@
     <string name="pref_locale_custom_title">"Idioma personalizado"</string>
     <string name="pref_locale_custom_summary">"Forçar idioma personalizado"</string>
     <string name="pref_locale_list_title">"Selecionar idioma"</string>
+    <string name="action_grant">"Conceder"</string>
+    <string name="action_syncing">"Sincronizar"</string>
+    <string name="cancel_button_label">"Cancelar"</string>
+    <string name="choose_button_label">"Selecionar"</string>
+    <string name="details_anti_features">"Caraterísticas Indesejadas"</string>
+    <string name="details_no_anti_features">"Sem caraterísticas indesejadas"</string>
+    <string name="details_no_changes">"Sem registo de alterações fornecido pelo programador"</string>
+    <string name="details_no_handler">"Não tem nenhuma aplicação disponível consiga abrir %s."</string>
+    <string name="error_dir_access">"Não é possível aceder ao diretório"</string>
+    <string name="last_edit">"Última edição: "</string>
+    <string name="pref_updates_app_suggested">"Apenas atualizações sugeridas"</string>
+    <string name="string_install_failed">"Falha ao instalar"</string>
+    <string name="string_install_success">"Instalado com sucesso"</string>
+    <string name="string_no_root">"Acesso root não disponível"</string>
+    <string name="string_uninstall_failed">"Falha ao desinstalar"</string>
+    <string name="action_remove_all">"Remover todos"</string>
+    <string name="action_save_return">"Gravar e Voltar"</string>
+    <string name="pref_install_mode_session">"Sessão"</string>
+    <string name="string_export_failed">"Falha ao exportar lista"</string>
+    <string name="string_export_to">"Lista exportada"</string>
+    <string name="string_import_failed">"Falha ao importar lista"</string>
 </resources>
